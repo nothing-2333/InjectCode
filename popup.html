@@ -2,9 +2,85 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>webtools</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Tools</title>
+    <style>
+        /* 基础样式 */
+        body {
+            width: 200px;
+            height: auto;
+            margin: 0;
+            padding: 10px;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #333;
+            color: #fff;
+            justify-content: center; /* 使内容垂直居中 */
+        }
+
+        /* 标题样式 */
+        h1 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            opacity: 0; /* 初始透明度为0 */
+            animation: fadeIn 2s ease forwards; /* 应用动画 */
+        }
+
+        /* 按钮样式 */
+        button {
+            padding: 10px;
+            margin: 5px;
+            font-size: 1em;
+            font-weight: bold;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%; /* 确保按钮宽度一致 */
+        }
+
+        /* 按钮悬停效果 */
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        /* 第二个按钮的样式 */
+        button:nth-of-type(2) {
+            background-color: #dc3545;
+        }
+
+        button:nth-of-type(2):hover {
+            background-color: #c82333;
+        }
+    </style>
 </head>
-<body style="width: 200px;height: 200px;">
-    <h1 id = "message">nihao</h1>
+<body>
+    <h1 id="message">你好...</h1>
+
+    <button id="actionButton1">查看 || 修改</button>
+    <button id="actionButton2">注入&&刷新</button>
+
+    <script>
+        // 为按钮添加点击事件
+        document.getElementById('actionButton1').addEventListener('click', function() {
+
+        });
+
+        document.getElementById('actionButton2').addEventListener('click', function() {
+
+        });
+    </script>
 </body>
 </html>
+
+<!-- CSS动画 -->
+<style>
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+</style>

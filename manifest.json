@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "webtools",
     "version": "1.0",
-    "description": "为更好的动态调试而生.",
+    "description": "为更好的注入代码而生.",
     "icons": {
         "128": "img/logo.png",
         "48": "img/logo.png",
@@ -11,5 +11,10 @@
     "action": {
         "default_icon": "img/logo.png",
         "default_popup": "popup.html"
+    },
+    "options_page": "options.html",
+    "options_ui": {
+      "open_in_tab": true,
+      "page": "options.html"
     }
 }
